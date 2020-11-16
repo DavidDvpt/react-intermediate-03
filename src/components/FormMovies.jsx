@@ -66,13 +66,15 @@ class FormMovies extends Component {
                         </div>
 
                         <div className="form-data">
-                            <label htmlFor="comment">Email Address</label>
-                            <input
-                                type="email"
+                            <label htmlFor="comment">Comment</label>
+                            <textarea
+                                type="text"
                                 id="comment"
                                 name="comment"
                                 onChange={this.onChange}
                                 value={this.state.comment}
+                                cols="80"
+                                rows="10"
                             />
                         </div>
                         <hr />
